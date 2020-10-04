@@ -3,98 +3,113 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <div class="jumbotron text-center" style="margin-bottom: 0">
-    <h1>
-        Book Search Web Application
-    </h1>
+  <h1>
+    Book Search Web Application
+  </h1>
 </div>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- For carousel functionality -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
 <body>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <a class="navbar-brand" href="index.html">Home</a>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
-     </button>
+    </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
-        <li class="nav-item">
-             <a class="nav-link" href="main.html">Book Main Page</a>
-        </li>
-         <li class="nav-item">
-             <a class="nav-link" href="account.html">Account Information</a>
-        </li>   
+            <li class="nav-item">
+                <a class="nav-link" href="index.html" style="padding: 10px 15px 10px"> Home</a>
+            </li>
+            <li class="active">
+                <a class="nav-link" href="main.html" style="padding: 10px 15px 10px">Book Main Page</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="account.html" style="padding: 10px 15px 10px">Account Information</a>
+            </li>
         </ul>
-     </div>  
-    </nav>
+    </div>
+</nav>
 
-<div class ="row" style="margin-top: 30px">
+  <div class="row" style="margin-top: 30px">
+
     <div class="col-sm-3" style="margin-left: 30px">
-        <form class="form-group">
-            <p>
-            <label>Search Book Category</label>
-            <input class="form-control" type="text"></p>
-            <button type="submit" class="btn btn-info">Submit</button>
-            <p>
-                <p></p>
-            <label>Search ISBN</label>
-            <input class="form-control" type="text"></p>
-            <button type="submit" class="btn btn-info">Submit</button>
-          </form>
+      <form class="form-group">
+        <p>
+          <label>Search Book Category</label>
+          <input class="form-control" type="text"></p>
+        <button type="submit" class="btn btn-info">Submit</button>
+        <p>
+        <p></p>
+        <label>Search ISBN</label>
+        <input class="form-control" type="text"></p>
+        <button type="submit" class="btn btn-info">Submit</button>
+      </form>
     </div>
 
     <div class="col-sm-4" style="margin-left: 30px">
-        <h2>
-    Books Read
-    </h2>
-<table class="table table-hover"> 
-    <tr class="success">
-        <td class="font-weight-bold">Title</td>
-        <td class="font-weight-bold">Author</td>
-        <td class="font-weight-bold">Date Completed</td>
-    </tr>
-    <tr class="success">
-        <td>Huckleberry Finn</td>
-        <td>Mark Twain</td>
-        <td>9/24/2020</td>
-    </tr>
-</table>
-<h3>Percentage of Goals Completed</h3>
-<div class="progress"?>
-    <div class="progress-bar" style="width:70%">70%</div>
-  </div>
-  <p></p>
-  <h3 class="bg-success text-center">Record Completed Book</h3>
-  <form class="form-group">
-    <p>
-    <label>Book Title</label>
-    <input class="form-control" type="text"></p>
-    <p>
-        <p></p>
-    <label>Author</label>
-    <input class="form-control" type="text"></p>
-    <label>Date Completed</label>
-    <input class="form-control" type="date"></p>
-    <button type="submit" class="btn btn-info">Submit</button>
-  </form>
-</div>
+      <h2>
+        Books Read
+      </h2>
+      <table class="table table-hover">
+        <tr class="success">
+          <td class="font-weight-bold">Title</td>
+          <td class="font-weight-bold">Author</td>
+          <td class="font-weight-bold">Date Completed</td>
+        </tr>
+        <tr class="success">
+          <td>Huckleberry Finn</td>
+          <td>Mark Twain</td>
+          <td>9/24/2020</td>
+        </tr>
+        <tr class="success">
+          <td>The Hitchhiker's Guide to the Galaxy</td>
+          <td>Douglas Adams</td>
+          <td>6/15/2019</td>
+        </tr>
+      </table>
 
-<div class="col-sm-3">
-      <h3>View Personal Libray</h3>
+      <span class="text-center"><h3>Percentage of Goals Completed</h3></span>
+      <div class="progress" ?>
+        <div class="progress-bar" style="width:70%">70%</div>
+      </div>
+      <p></p>
+      <h3 class="bg-success text-center">Record Completed Book</h3>
+      <form class="form-group">
+        <p>
+          <label>Book Title</label>
+          <input class="form-control" type="text"></p>
+        <p>
+        <p></p>
+        <label>Author</label>
+        <input class="form-control" type="text"></p>
+        <label>Date Completed</label>
+        <input class="form-control" type="date"></p>
+        <button type="submit" class="btn btn-info">Submit</button>
+      </form>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="row" style="margin-left: 0px">
+        <a href="goals.html" class="btn btn-outline-dark" role="button" style="margin: 15px">My Goals</a>
+        <a href="personalLibrary.html" class="btn btn-outline-dark" role="button" style="margin: 15px">My Library</a>
+      </div>
+      
       <div id="demo" class="carousel slide" data-ride="carousel">
 
         <!-- Indicators -->
         <ul class="carousel-indicators">
-          <li data-target="book1.jpg" data-slide-to="0" class="active"></li>
-          <li data-target="book2.jpg" data-slide-to="1"></li>
-          <li data-target="book3.jpg" data-slide-to="2"></li>
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
         </ul>
-      
+
         <!-- The slideshow -->
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -107,7 +122,7 @@
             <img src="book3.jpg" class="img-fluid" alt="Book 3">
           </div>
         </div>
-      
+
         <!-- Left and right controls -->
         <a class="carousel-control-prev" href="#demo" data-slide="prev">
           <span class="carousel-control-prev-icon"></span>
@@ -115,9 +130,16 @@
         <a class="carousel-control-next" href="#demo" data-slide="next">
           <span class="carousel-control-next-icon"></span>
         </a>
-      
+
       </div>
+
     </div>
-</div>
+  </div>
+  <footer class="text-center bg-secondary fixed-bottom">
+    <p class="w3-medium">
+      Powered by <a href="https://www.d2l.depaul.edu" target="_blank" style="color:white">CSC 436 Group 1</a>
+    </p>
+  </footer>
 </body>
+
 </html>
